@@ -25,7 +25,7 @@ def get_answer(user_input):
     for keyword in knowledge_base:
         if keyword in user_input:
             return knowledge_base[keyword]
-    return "Я пока не знаю ответа на этот вопрос. Но я учусь!"
+    return "Я пока не знаю ответа на этот вопрос."
 
 # ============================================
 # HTML-интерфейс (встроенная страница)
@@ -36,7 +36,7 @@ HTML_PAGE = """
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Чат-бот Дентал-Профи</title>
+    <title>Чат-бот стоматология "Дуэт"</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -121,10 +121,10 @@ HTML_PAGE = """
 <body>
     <div class="chat-container">
         <div class="chat-header">
-            🦷 Дентал-Профи
+            🦷 стоматология "Дуэт"
         </div>
         <div class="chat-box" id="chat-box">
-            <div class="message bot">Здравствуйте! Я виртуальный помощник. Чем могу помочь?</div>
+            <div class="message bot">Здравствуйте! Я виртуальный помощник стоматологии "Дуэт". Чем могу помочь?</div>
         </div>
         <div class="chat-input">
             <input type="text" id="user-input" placeholder="Напишите сообщение..." />
